@@ -1,0 +1,198 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.background {
+background-color: rgba(68, 58, 147, 1);
+height: 100vh;
+width: 100vw;
+}
+
+.container-logo {
+background-color: rgba(12, 10, 29, 1);
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container-logo h1{
+font-family: "Bebas Neue", sans-serif;
+color: white;
+font-size: 75px;
+font-weight: 400;
+text-align: center;
+margin: 0;
+}
+.container-logo h2{
+font-family: "Mabrick Signature", sans-serif;
+color: white;
+font-size: 28px;
+line-height: 0;
+margin: 0;
+text-align: center;
+}
+
+.container-bio {
+background: #5258e5;
+background: -moz-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+background: -webkit-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+background: linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+height: 450px;
+padding: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.bio-mateus {
+padding-top: 15px;
+width: 80%;
+max-width: 450px;
+height: 450px;
+}
+.bio-mateus h1 {
+font-family: "Markazi Text", serif;
+color: rgba(244, 244, 244, 1);
+font-size: 60px;
+font-weight: 700;
+display: flex;
+justify-content: center;
+width: 425px;
+}
+.bio-mateus h2{
+font-family: "Markazi Text", serif;
+color: rgba(244, 244, 244, 1);
+font-size: 21px;
+font-weight: 400;
+width: 425px;
+}
+
+img {
+width: 425px;
+height: 450px;
+}
+
+.social-media {
+width: 425px;
+display: flex; 
+flex-direction: column;
+align-items: center;
+}
+
+button {
+    position: relative;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px #cd201f solid;
+    overflow: hidden;
+  }
+  
+  .text1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 22%;
+  }
+  
+  .text2 {
+    position: absolute;
+    top: 25%;
+    left: -50px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+  }
+  
+  .icon::before {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+    content: '';
+    width: 130px;
+    height: 33px;
+    border-radius: 30px;
+    background-color: #cd201f;
+  }
+  
+  button:hover .icon {
+    transform: translateX(96px);
+    transition: transform 0.5s;
+  }
+  
+  button:hover .text2 {
+    transform: translateX(100px);
+    transition: transform 0.6s;
+  }
+  
+  button:active {
+    transform: scale(1.03);
+  }
+  button {
+    position: relative;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px #FFB700 solid;
+    overflow: hidden;
+  }
+  
+  .text1 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 22%;
+  }
+  
+  .text2 {
+    position: absolute;
+    top: 25%;
+    left: -50px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+  }
+  
+  .icon::before {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+    content: '';
+    width: 130px;
+    height: 33px;
+    border-radius: 30px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    ;
+  }
+  
+  button:hover .icon {
+    transform: translateX(96px);
+    transition: transform 0.5s;
+  }
+  
+  button:hover .text2 {
+    transform: translateX(100px);
+    transition: transform 0.6s;
+  }
+  
+  button:active {
+    transform: scale(1.03);
+  }
