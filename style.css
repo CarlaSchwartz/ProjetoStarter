@@ -12,28 +12,14 @@ width: 100vw;
 
 .container-logo {
 background-color: rgba(12, 10, 29, 1);
-background-image: url(./assets/background-logo.jpg);
+background-image: url(./assets/logo-page.jpg);
 height: 150px;
+background-repeat: no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
 }
-.container-logo h1{
-font-family: "Bebas Neue", sans-serif;
-color: #EEEEEE;
-font-size: 75px;
-font-weight: 400;
-text-align: center;
-margin: 0;
-}
-.container-logo h2{
-font-family: "Mabrick Signature", sans-serif;
-color: #EEEEEE;
-font-size: 28px;
-line-height: 0;
-margin: 0;
-text-align: center;
-}
+
 
 .container-bio {
 background: #5258e5;
@@ -86,8 +72,7 @@ flex-direction: column;
 align-items: center;
 }
 
-a 
-{
+a {
 color: #EEEEEE;
 text-decoration: none;
 }
@@ -214,7 +199,7 @@ background: -moz-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 background: -webkit-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 background: linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 padding: 0;
-height: 380px;
+height: 300px;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -301,11 +286,13 @@ gap: 10px;
   }
 
 .container-depoimentos {
+  background-image: url(./assets/background-depoimentos.jpg);
+  background-repeat: no-repeat;
   font-family: 'Rubik', sans-serif;
   color:#EEEEEE;
   font-size: 17px;
   font-weight: 400;
-  height: 450px;
+  height: 500px;
   max-width: 100%;
   display: flex;
   flex-direction: row;
@@ -313,41 +300,62 @@ gap: 10px;
   align-items: center;
   text-align: center;
   row-gap: 10px;
-  column-gap: 30px;
+  column-gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .dep1{
-  border: 2px solid black;
+  border: 1px solid #EEEEEE;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
   height: 200px;
   width: 290px;
   align-self: flex-start;
+  
 }
 .dep2{
-  border: 2px solid black;
+  border: 1px solid #EEEEEE;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
   height: 200px;
   width: 290px;
   align-self: center;
 }
 .dep3{
-  border: 2px solid black;
+  border: 1px solid #EEEEEE;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
   height: 200px;
   width: 290px;
   align-self: flex-end;
 }
 .dep4{
-  border: 2px solid black;
+  border: 1px solid #EEEEEE;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
   height: 200px;
   width: 290px;
   align-self: flex-start;
 }
 .dep5{
-  border: 2px solid black;
+  border: 1px solid #EEEEEE;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
   height: 200px;
   width: 290px;
   align-self: center;
 }
 .dep6{
-  border: 2px solid black;
+  border: 1px solid #EEEEEE;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
   height: 200px;
   width: 290px;
   align-self: flex-end;
@@ -370,8 +378,9 @@ height: 400px;
   align-items: center;
   width: 470px;
   margin-left: 200px;
+  padding-top: 20px;
 }
-.container-hotmart h2 {
+.container-hotmart p {
   font-family: 'Rubik', sans-serif;
   color:#EEEEEE;
   font-size: 17px;
@@ -382,3 +391,10 @@ height: 400px;
   margin-top: 15px;
 } 
 
+.checkmark::before {
+  content: "\2713"; /* Código unicode para a marca de verificação */
+  display: inline-block;
+  font-size: 20px;
+  color: green; /* Cor da marca de verificação */
+  margin-right: 5px; /* Espaço entre a marca de verificação e o texto */
+}
