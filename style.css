@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-.background {
+body { 
 background-color: rgba(68, 58, 147, 1);
 height: 100vh;
 width: 100vw;
@@ -20,7 +20,7 @@ align-items: center;
 }
 .container-logo h1{
 font-family: "Bebas Neue", sans-serif;
-color: white;
+color: #EEEEEE;
 font-size: 75px;
 font-weight: 400;
 text-align: center;
@@ -28,7 +28,7 @@ margin: 0;
 }
 .container-logo h2{
 font-family: "Mabrick Signature", sans-serif;
-color: white;
+color: #EEEEEE;
 font-size: 28px;
 line-height: 0;
 margin: 0;
@@ -46,7 +46,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
-    
+
 .bio-mateus {
 padding-top: 15px;
 width: 80%;
@@ -55,19 +55,23 @@ height: 400px;
 }
 .bio-mateus h1 {
 font-family: 'Rubik', sans-serif;
-color: rgba(244, 244, 244, 1);
-font-size: 40px;
+color: #EEEEEE;
+font-size: 38px;
 font-weight: 600;
 display: flex;
 justify-content: center;
-width: 425px;
+width: 470px;
+margin-left: 200px;
 }
 .bio-mateus h2{
 font-family: 'Rubik', sans-serif;
-color: rgba(244, 244, 244, 1);
-font-size: 18px;
+color:#EEEEEE;
+font-size: 17px;
 font-weight: 400;
-width: 425px;
+width: 470px;
+letter-spacing: 0; /*da uma olhada nesse comando, deixa todas as letras com o mesmo tamanho*/
+margin-left: 200px;
+margin-top: 15px;
 }
     
 img {
@@ -84,7 +88,7 @@ align-items: center;
 
 a 
 {
-color: white;
+color: #EEEEEE;
 text-decoration: none;
 }
 
@@ -110,7 +114,7 @@ button {
     left: -50px;
     font-weight: 700;
     font-size: 14px;
-    color: white;
+    color: #EEEEEE;
   }
   
   .icon {
@@ -167,7 +171,7 @@ button {
     left: -50px;
     font-weight: 700;
     font-size: 14px;
-    color: white;
+    color: #EEEEEE;
   }
   
   .icon {
@@ -209,8 +213,8 @@ background: #5258e5;
 background: -moz-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 background: -webkit-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 background: linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
-height: 400px;
 padding: 0;
+height: 380px;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -228,11 +232,12 @@ align-items: center;
   background: var(--background);
   position: relative;
   z-index: 1;
+  flex-grow: 1;
  }
 
  .container-cards {
 display: flex;
-flex-direction: row;
+flex-direction: wrap;
 gap: 10px;
 
  }
@@ -271,6 +276,7 @@ gap: 10px;
  .card .title {
   font-weight: bold;
   letter-spacing: .1em;
+  font-size: 16px;
  }
  
  /*Hover*/
@@ -284,14 +290,95 @@ gap: 10px;
  }
  
   ion-icon {
-  color:white;
+  color:#EEEEEE;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   }
-  
-  
+
+.container-depoimentos {
+  font-family: 'Rubik', sans-serif;
+  color:#EEEEEE;
+  font-size: 17px;
+  font-weight: 400;
+  height: 450px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 10px;
+  column-gap: 30px;
+}
+
+.dep1{
+  border: 2px solid black;
+  height: 200px;
+  width: 290px;
+  align-self: flex-start;
+}
+.dep2{
+  border: 2px solid black;
+  height: 200px;
+  width: 290px;
+  align-self: center;
+}
+.dep3{
+  border: 2px solid black;
+  height: 200px;
+  width: 290px;
+  align-self: flex-end;
+}
+.dep4{
+  border: 2px solid black;
+  height: 200px;
+  width: 290px;
+  align-self: flex-start;
+}
+.dep5{
+  border: 2px solid black;
+  height: 200px;
+  width: 290px;
+  align-self: center;
+}
+.dep6{
+  border: 2px solid black;
+  height: 200px;
+  width: 290px;
+  align-self: flex-end;
+}
+
+.container-hotmart {
+background: #5258e5;
+background: -moz-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+background: -webkit-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+background: linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+height: 400px;
+}
+.container-hotmart h1{
+  font-family: 'Rubik', sans-serif;
+  color: #EEEEEE;
+  font-size: 38px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  margin-left: 200px;
+}
+.container-hotmart h2 {
+  font-family: 'Rubik', sans-serif;
+  color:#EEEEEE;
+  font-size: 17px;
+  font-weight: 400;
+  width: 470px;
+  letter-spacing: 0; /*da uma olhada nesse comando, deixa todas as letras com o mesmo tamanho*/
+  margin-left: 200px;
+  margin-top: 15px;
+} 
+
