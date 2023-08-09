@@ -2,31 +2,28 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Rubik', sans-serif;
 }
 
 body { 
-background-color: rgba(68, 58, 147, 1);
-height: 100vh;
-width: 100vw;
-}
-
-.container-logo {
-background-color: rgba(12, 10, 29, 1);
-background-image: url(./assets/logo-page.jpg);
-height: 150px;
-background-repeat: no-repeat;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-
-.container-bio {
 background: #5258e5;
 background: -moz-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 background: -webkit-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
 background: linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
-height: 400px;
+background-size: cover;
+}
+
+/*Cabeçalho*/
+.container-logo {
+background-image: url(./assets/logo-page.jpg);
+height: 150px;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+/*Bio*/
+.container-bio {
+height: auto;
 padding: 0;
 display: flex;
 justify-content: space-around;
@@ -55,7 +52,7 @@ color:#EEEEEE;
 font-size: 17px;
 font-weight: 400;
 width: 470px;
-letter-spacing: 0; /*da uma olhada nesse comando, deixa todas as letras com o mesmo tamanho*/
+letter-spacing: 0; 
 margin-left: 200px;
 margin-top: 15px;
 }
@@ -78,133 +75,134 @@ text-decoration: none;
 }
 
 button {
-    position: relative;
-    width: 130px;
-    height: 35px;
-    border-radius: 30px;
-    background-color: white;
-    border: 1px #cd201f solid;
-    overflow: hidden;
-  }
+position: relative;
+width: 130px;
+height: 35px;
+border-radius: 30px;
+background-color: white;
+border: 1px #cd201f solid;
+overflow: hidden;
+}
   
-  .text1 {
-    font-size: 15px;
-    font-weight: 600;
-    margin-left: 22%;
-  }
+.text1 {
+font-size: 15px;
+font-weight: 600;
+margin-left: 22%;
+}
   
-  .text2 {
-    position: absolute;
-    top: 25%;
-    left: -50px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #EEEEEE;
-  }
+.text2 {
+position: absolute;
+top: 25%;
+left: -50px;
+font-weight: 700;
+font-size: 14px;
+color: #EEEEEE;
+}
   
-  .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.5s;
-  }
+.icon {
+position: absolute;
+top: 0;
+left: 0;
+transition: transform 0.5s;
+}
   
-  .icon::before {
-    position: absolute;
-    left: -100px;
-    top: 0;
-    z-index: -1;
-    content: '';
-    width: 130px;
-    height: 33px;
-    border-radius: 30px;
-    background-color: #cd201f;
-  }
+.icon::before {
+position: absolute;
+left: -100px;
+top: 0;
+z-index: -1;
+content: '';
+width: 130px;
+height: 33px;
+border-radius: 30px;
+background-color: #cd201f;
+}
   
-  button:hover .icon {
-    transform: translateX(96px);
-    transition: transform 0.5s;
-  }
+button:hover .icon {
+transform: translateX(96px);
+transition: transform 0.5s;
+}
   
-  button:hover .text2 {
-    transform: translateX(100px);
-    transition: transform 0.6s;
-  }
-  
-  button:active {
-    transform: scale(1.03);
-  }
-  button {
-    position: relative;
-    width: 130px;
-    height: 35px;
-    border-radius: 30px;
-    background-color: #181439;
-    border: 1px #00ADB5 solid;
-    overflow: hidden;
-  }
-  
-  .text1 {
-    font-size: 15px;
-    font-weight: 600;
-    margin-left: 22%;
-  }
-  
-  .text2 {
-    position: absolute;
-    top: 25%;
-    left: -50px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #EEEEEE;
-  }
-  
-  .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.5s;
-  }
-  
-  .icon::before {
-    position: absolute;
-    left: -100px;
-    top: 0;
-    z-index: -1;
-    content: '';
-    width: 130px;
-    height: 33px;
-    border-radius: 30px;
-    background: radial-gradient(circle at 30% 107%,#5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
-    ;
-  }
-  
-  button:hover .icon {
-    transform: translateX(96px);
-    transition: transform 0.5s;
-  }
-  
-  button:hover .text2 {
-    transform: translateX(100px);
-    transition: transform 0.6s;
-  }
-  
-  button:active {
-    transform: scale(1.03);
-  }
+button:hover .text2 {
+transform: translateX(100px);
+transition: transform 0.6s;
+}
 
+button:active {
+transform: scale(1.03);
+}
+button {
+position: relative;
+width: 130px;
+height: 35px;
+border-radius: 30px;
+background-color: #181439;
+border: 1px #00ADB5 solid;
+overflow: hidden;
+}
+  
+.text1 {
+font-size: 15px;
+font-weight: 600;
+margin-left: 22%;
+}
+  
+.text2 {
+position: absolute;
+top: 25%;
+left: -50px;
+font-weight: 700;
+font-size: 14px;
+color: #EEEEEE;
+}
+  
+.icon {
+position: absolute;
+top: 0;
+left: 0;
+transition: transform 0.5s;
+}
+  
+.icon::before {
+position: absolute;
+left: -100px;
+top: 0;
+z-index: -1;
+content: '';
+width: 130px;
+height: 33px;
+border-radius: 30px;
+background: radial-gradient(circle at 30% 107%,#5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
+}
+  
+button:hover .icon {
+transform: translateX(96px);
+transition: transform 0.5s;
+}
+  
+button:hover .text2 {
+transform: translateX(100px);
+transition: transform 0.6s;
+}
+  
+button:active {
+transform: scale(1.03);
+}
+
+/*Links*/
 .container-links {
-background: #5258e5;
-background: -moz-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
-background: -webkit-linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
-background: linear-gradient(45deg, #5258e5 0%, #0c0a1d 100%, #0c0a1d 100%);
-padding: 0;
-height: 300px;
+height: auto;
 display: flex;
-justify-content: space-around;
+flex-direction: column;
 align-items: center;
 }
 
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 740px;
+  padding: 10px;
+}
 .card {
   --background: linear-gradient(to left, #00ADB5 0%, #0C0A1D 100%);
   width: 180px;
@@ -220,13 +218,6 @@ align-items: center;
   flex-grow: 1;
  }
 
- .container-cards {
-display: flex;
-flex-direction: wrap;
-gap: 10px;
-
- }
- 
  .card::after {
   position: absolute;
   content: "";
@@ -386,7 +377,7 @@ height: 400px;
   font-size: 17px;
   font-weight: 400;
   width: 470px;
-  letter-spacing: 0; /*da uma olhada nesse comando, deixa todas as letras com o mesmo tamanho*/
+  letter-spacing: 0; 
   margin-left: 200px;
   margin-top: 15px;
 } 
